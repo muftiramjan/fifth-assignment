@@ -278,7 +278,25 @@
               <label class="input input-bordered flex items-center gap-2">
                 <input type="text" class="grow" placeholder="Enter your Email ID" />
               </label>
-              <button class="w-full bg-[#1DD100] p-4 rounded-2xl text-white">Next</button>
+              <!-- <button id="nextBtn" class="w-full bg-[#1DD100] p-4 rounded-2xl text-white">next -->
+                <section id="popUp" >
+                 <!-- Open the modal using ID.showModal() method -->
+<button class="btn w-full bg-[#1DD100]" onclick="my_modal_5.showModal()">next</button>
+<dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+  <div class="modal-box">
+    <img class="mx-auto" src="images/success.png" alt="">
+    <h3 class="font-bold text-lg text-center">Congressional!</h3>
+    <p class="py-4">Thank you very much for purchasing four sets from us. Good luck with your journey and we hope you will continue to serve us in the future, Happy Jharna.</p>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn bg-[#1DD100]">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+                          </section>
+              <!-- </button> -->
              </div>
              <div class="flex justify-evenly my-6">
               <p class="dhsd2">Terms and Conditions</p>
@@ -288,7 +306,23 @@
         </div>
         </main>
         <footer></footer>
+        <section id="popUp" >
+<label  for="my_modal_7">open modal</label>
+<input type="checkbox" id="my_modal_7" class="modal-toggle" />
+<div class="modal" role="dialog">
+  <div class="modal-box">
+    <h3 class="text-lg font-bold">Hello!</h3>
+    <p class="py-4">This modal works with a hidden checkbox!</p>
+  </div>
+  <label class="modal-backdrop" for="my_modal_7">Close</label>
+</div>
+        </section>
     </div>
+    <script>
+
+    </script>
     <script src="for.js"></script>
 </body>
 </html>
+
+
