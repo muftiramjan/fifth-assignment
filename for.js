@@ -14,9 +14,11 @@ for(const btn of allbtn){
        count=count+1;
     //    allbtn.classList.add("disabled",true)
         if(count>=5){
+            alert('You cannot book more than four seats');
+           document.getElementById('btn').addEventListener('remove');
         return btn
         }
-      
+        
 
         const bdt=document.getElementById('bdt').innerText;
         const bdtTotal= parseInt(bdt);
@@ -25,7 +27,7 @@ for(const btn of allbtn){
     
         const seat=document.getElementById("seat");
         const convertBtd=parseInt(seat) ;
-        document.getElementById("seat").innerText=convertBtd-parseInt(40);
+        
 
 
 
