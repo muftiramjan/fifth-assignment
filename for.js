@@ -12,6 +12,13 @@ for(const btn of allbtn){
     btn.addEventListener('click',function(e){
         btn.style.backgroundColor="green";
        count=count+1;
+
+       const currentSeat = document.getElementById('seatTotal');
+       const getInnerText = currentSeat.innerText;
+       const getNumber = parseInt(getInnerText);
+       const newSeat = getNumber - 1;
+       currentSeat.innerText = newSeat;
+
     //    allbtn.classList.add("disabled",true)
         if(count>=5){
             alert('You cannot book more than four seats');
